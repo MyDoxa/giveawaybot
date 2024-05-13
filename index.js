@@ -6,12 +6,6 @@ const colors = require("colors");
 const config = require("./config.json");
 client.config = config;
 
-// Connect to the database
-const mongoose = require("mongoose");
-mongoose.set("strictQuery", false);
-mongoose.connect(`${config.MONGO_URL}`);
-const db = mongoose.connection;
-
 // Check the connection
 db.on("error", console.error.bind(console, "Connection error:"));
 db.once("open", () => {
