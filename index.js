@@ -6,12 +6,6 @@ const colors = require("colors");
 const config = require("./config.json");
 client.config = config;
 
-// Check the connection
-db.on("error", console.error.bind(console, "Connection error:"));
-db.once("open", () => {
-  console.log(colors.rainbow("[MongoDB] Connected to MongoDB!"));
-});
-
 // Create the model
 const giveawayModel = require("./schema/giveaway");
 
