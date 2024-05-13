@@ -1,6 +1,5 @@
 {
   "TOKEN": "BOT_TOKEN",
-  "MONGO_URL": "MONGODB_URL",
   "everyoneMention": false,
   "hostedBy": true,
   "prefix": "BOT_PREFIX",
